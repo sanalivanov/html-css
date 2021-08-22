@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head has hte information about the webpage
+-title, style, stylesheet, script -->
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+    </style>
+</head>
+
+<!-- Actual code will go to the body 
+Almost all tags has opening and closing tags
+<body> : opening body tags < / body> : closing body tag -->
+<body style="background-color: rgb(245, 251, 251);">
+    <h1 style="color: blue;">Heading 1</h1>
+    <p id="my-info">
+        I live in <b>USA</b> <br>
+        <i>USA</i> has  <b><u><i>freedom</i></u></b> <br>
+        USA is very <u>rich</u> 
+    </p>
+    <h2>IMAGE</h2>
+    <img id="sun-flower"
+    src="https://cdn.britannica.com/84/73184-004-E5A450B5/Sunflower-field-Fargo-North-Dakota.jpg" alt="sunflower">
+    
+    <hr>
+    <h3 class="my-custom-style">TEXT LINK</h3>
+    <a 
+    href="https://www.techproeducation.com/"
+    target="_blank">TechPro Education</a>
+
+
+
+    <h4 class="my-custom-style">IMAGE LINK</h4>
+
+    <a href="https://www.google.com/" target="_blank">   
+        <img id="google_link" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google_logo">   
+    </a>
+
+    <hr>
+
+    <section class="list-section">
+
+    <h5 class="my-custom-style">LISTS</h5>
+    <ul style="list-style-type: square;">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </ul>
+
+    <ol type="A">
+        <li>Honda</li>
+        <li>Ferrari</li>
+        <li>Tesla</li>
+    </ol>
+
+    </section>
+    
+    <p class="my-custom-style">This is a paragrapgh that I am using to stylle using my custom style</p>
+
+    <h6 id="my-unique-id">====WEB TABLES====</h6>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>City</th>
+            <th>Phone</th>
+        </thead>
+        <tr>
+            <td>John</td>
+            <td>Dallas</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>LA</td>
+            <td>5678</td>
+        </tr>
+
+    </table>
+
+    <h6>IFRAMES</h6>
+    <iframe id="frame" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="0"></iframe>
+
+    <br>
+
+
+    <div id="form-div">
+
+    <h6 class="my-custom-style">---FORMS---</h6>
+
+    <form action="">
+        <!--Fieldset creates border around the form element-->
+        <fieldset>
+            <!--legend creates a tag on the field-->
+        <legend>User Information</legend>
+
+      
+
+    <label style="font-size: 50px">Enter First Name</label><br>
+    <input type="TextBox" style="font-size: 50px;" placeholder="enter first name"><br>
+
+    <label style="font-size: 50px;">Enter Last Name</label><br>
+    <input type="text" style="font-size: 50px;"><br>
+
+    <label style="font-size: 50px;">Enter Your Email</label><br>
+    <input type="email" style="font-size: 50px;"><br>
+
+    <input type="submit" style="font-size: 50px;" value="SUBMIT!"><br>
+        <!--textarea is used to create larger text area
+        cold and areas is used to determine the number of visible characters-->
+    <label style="font-size: 50px;">TEXT AREA</label><br>
+    <textarea cols="30" rows="10"></textarea><br>
+
+    <!--use button tag to create a button-->
+    <button style="font-size: 50px;">SUBMIT !</button><br>
+
+    </fieldset>
+
+    </form> 
+
+    <h6 class="my-custom-style">---Checkbox---</h6>
+    <label>Choose from the menu</label><br>
+
+    <input type="checkbox">
+    <label for="" style="font-size: 25px;">Cheese</label>
+
+    <input type="checkbox">
+    <label for="" style="font-size: 25px;">Pepperoni</label>
+
+    <input type="checkbox">
+    <label for="" style="font-size: 25px;">Mushroom</label>
+
+    <h6 class="my-custom-style">---Radio Button---</h6>
+    <label for="">GENDER</label><br>
+
+    <input type="Radio" name="gender">
+    <label for="" style="font-size: 25px">MALE</label>
+
+    <input type="Radio" name="gender">
+    <label for="" style="font-size: 25px">FEMALE</label>
+
+    <input type="Radio" name="gender">
+    <label for="" style="font-size: 25px">OTHER</label>
+
+    </div>
+
+    <h6 class="my-custom-style">----DROPDOWN----</h6>
+
+    <form action="">
+        <label style="font-size: 25px;">Choose a model</label><br>
+
+        <select name="car-options" id="cars">
+            <option value="choose" selected>--Choose a car--</option>
+            <option value="tesla">Tesla</option>
+            <option value="bmw">BMW</option>
+            <option value="honda">HONDA</option>
+            <option value="nissan">NISSAN</option>
+            <option value="toyota">TOYOTA</option>            
+        </select>
+
+    </form>
+
+    <h6 class="my-custom-style">----DATES----</h6>
+    <form action="">
+
+        <label for="">Choose an appointment day</label><br>
+        <input type="date"><br><br>
+        <input type="submit">
+        <hr><br>
+        <label for="">Select appointment time</label><br><br>
+        <input type="time"><br><br>
+        <input type="submit" name="" id=""><br><br>
+        <hr><br>
+        <label for="">Choose an appoinmnent date and time</label><br>
+        <input type="datetime-local"><br>
+
+    </form>
+
+    <h6 class="my-custom-style">----Color Picker----</h6>
+    <form action="">
+
+    <label style="font-size: 15px;">Choose a color</label><br>
+    <input type="color">
+
+    </form>
+
+    <h6 class="my-custom-style">----Color Picker----</h6>
+    <form action="">
+
+    <label style="font-size: 15px;">--FILE UPLOAD---</label><br><br>
+    <input type="file"><br><br>
+    <input type="submit">
+
+    </form>
+
+    <h6 class="my-custom-style">----Video Upload----</h6>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/50wmWvPylMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>" frameborder="0"></iframe>
+
+    <h6 class="my-custom-style">----Alerts----</h6>
+    <button onclick="alert('Warning!!! You clicked a wrong button')" 
+    type="button" 
+    style="font-size: 25px;">Click me!
+    </button>
+
+
+
+
+
+
+</body>
+
+</html>

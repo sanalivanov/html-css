@@ -1,0 +1,164 @@
+Styling elements:
+style is used to style the elements
+1. inline Styling: Used inside the BODY. Inline styling in done by using style tag inside the element
+<h3 style="text-align: center;">Heading 3</h3>
+
+2.Internal Styling: style is used inside the HEAD
+
+NOTES: inline styling will override the internal styling because inline is the last style
+
+---STYLIGN ELEMENTS WITH CLASS ATRIBUTE---
+We use class attribute to do same stylings for multiple elements
+
+. means class
+
+Creating a custom style 
+ .my-custom-style{
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            text-align: center;
+            background-color: yellow;
+  }
+
+using this custom style in ANY ELEMENT YOU WANT
+<h3 class="my-custom-style">Heading 3</h3>
+
+Now this style will apply to h3 element
+
+--STYLING ELEMENTS USING ID ATTRIBUTE-----
+-id attribute is used to style UNIQUE elements
+# means id
+
+--------Text Align-----
+    <h3 style="text-align: center;">Heading 3</h3> : aligning in the center
+    <h3 style="text-align: left;">Heading 3</h3> : aligning to the left
+    <h3 style="text-align: right;">Heading 3</h3> : aligning to the right
+    <h3 style="text-align: justify;">Heading 3</h3> : stretching out the text
+---------backgorund color---------------
+<body style="background-color: rgb(245, 251, 251);">
+
+---br tag---
+<br> is used to give break. it will take the next element to the next line
+
+--hr tag----
+<hr> is used to draw a horizontal line
+
+--b tag---
+b tag is used to make the text bold
+ I live in <b>USA</b> 
+
+ --i tag----
+ i tag is used to make the text italic
+ <i>USA</i> has freedom
+
+ ---u tag---
+ u tag is used to underline the texts
+USA is very <u>rich</u> 
+
+
+----ADDING IMAGE------
+<img src="PATH OF THE IMAGE"> tag is used to add image
+
+---SPACING IMAGES----
+Margin: giving space around the image
+
+  margin: 100px; --->>> 100 px space in all direction 
+
+  margin-top: 100px;  --->>100 px space ONLY at the top
+  margin-bottom: 100px; --->>100 px space ONLY at the buttom
+  margin-right: 100px;--->>100 px space ONLY at the right
+  margin-left: 100px;--->>100 px space ONLY at the left
+
+
+
+
+Padding: giving spage INSIDE the image
+  padding: 100px; --->>> 100 px space in all directions
+
+  padding-top: 100px;-->>100 px space ONLY at the top
+  padding-right: 100px;-->>100 px space ONLY at the right
+  padding-bottom: 100px;-->>100 px space ONLY at the buttom
+  padding-left: 100px;-->>100 px space ONLY at the left
+
+
+
+---ADDING TEXT LINK-------
+
+a tag is used to add a LINK
+
+target="_blank"  --->>> open the link in a new window
+
+
+---ADDING IMAGE LINK----
+we use img tag inside a tag to create an image link
+
+<a href="https://www.google.com/" target="_blank">   
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google_logo">   
+</a>
+
+
+-----------EXTERNAL CSS-----------
+This is the most common way
+-easy to read, reusable css codes, seperating html and css files
+
+STEPS:
+1. create a css file: styles.css
+
+2. add link in the head and give path of styles.css
+<link rel="stylesheet" href="styles.css">
+
+3. write your css code similar to internal css
+
+
+----LIST---------
+1. Unordered List (ul tag)
+    List Item (li tag)
+
+    <ul style="list-style-type: circle;"> -> circle images
+    <ul style="list-style-type: lower-greek;"> -> greek symbos
+    <ul style="list-style-type: square"> -> square
+
+2. Ordered List (ol tag)
+    List Item (li tag)
+
+<ol type="i"> -> i, ii, iii
+
+
+---WEB TABLES----
+ <table> is used to create web TABLES
+
+<thead> is used to create table header
+<th> is used to create table header cell
+
+<tr> is used to create TABLE ROW
+<td> is used to create TABLE DATA
+
+NOTES: there is no tag to create COLUMN direclty
+
+
+
+----IFRAMES-----
+iframes are pages within a page
+
+<iframe> tag is usde to create iframes
+
+
+
+---SECTION----
+section is section
+section is used to divide the contents into specific logical sections
+sections do not have any visual immediate effect
+
+------DIV----
+div means division
+div is used to divide the contents into specific logical sections
+div do not have any visual immediate effect
+
+
+---background image-------
+
+background-image: url();
+background-repeat: no-repeat; -> will not repeat teh same image. image will be used only once
+background-size: WIDTH HEIGH;
+background-size: 100% 100%;
